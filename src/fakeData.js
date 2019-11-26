@@ -295,3 +295,7 @@ export const mapInfoMocks = {
     ],
     "actions": []
 };
+
+export const ownerId = 1;
+export const opponentId = 2;
+

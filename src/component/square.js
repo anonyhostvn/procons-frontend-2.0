@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Square = ({color, percentWidth, percentHeight, children}) => {
+const Square = ({color, percentWidth, percentHeight, children, agentId}) => {
     return (
         <div style={{
             backgroundColor: color,
             width: percentWidth,
-            height: percentHeight
+            height: percentHeight,
+            border: '1px solid black'
         }}
         >
             {children}
