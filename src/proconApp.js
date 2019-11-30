@@ -1,14 +1,17 @@
 import React from 'react';
-import Board from "./component/board";
-import {mapInfoMocks} from "./fakeData";
 import {DndProvider} from "react-dnd";
 import HTML5Backend from "react-dnd-html5-backend";
+import {Provider} from 'react-redux';
+import {store} from './redux/store';
+import GameScreen from "./container/gameScreen";
 
 const ProconsApp = () => {
     return (
-        <DndProvider backend={HTML5Backend}>
-            <Board mapInfo={mapInfoMocks}/>
-        </DndProvider>
+        <Provider store={store}>
+            <DndProvider backend={HTML5Backend}>
+                <GameScreen/>
+            </DndProvider>
+        </Provider>
     )
 };
 

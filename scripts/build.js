@@ -109,7 +109,7 @@ checkBrowsers(paths.appPath, isInteractive)
       const tscCompileOnError = process.env.TSC_COMPILE_ON_ERROR === 'true';
       if (tscCompileOnError) {
         console.log(chalk.yellow(
-          'Compiled with the following type errors (you may want to check these before deploying your app):\n'
+          'Compiled with the following type errors (you may want to check these before deploying your board):\n'
         ));
         printBuildError(err);
       } else {
@@ -134,7 +134,7 @@ function build(previousFileSizes) {
   if (process.env.NODE_PATH) {
     console.log(
       chalk.yellow(
-        'Setting NODE_PATH to resolve modules absolutely has been deprecated in favor of setting baseUrl in jsconfig.json (or tsconfig.json if you are using TypeScript) and will be removed in a future major release of create-react-app.'
+        'Setting NODE_PATH to resolve modules absolutely has been deprecated in favor of setting baseUrl in jsconfig.json (or tsconfig.json if you are using TypeScript) and will be removed in a future major release of create-react-board.'
       )
     );
     console.log();
